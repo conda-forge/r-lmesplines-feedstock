@@ -1,4 +1,4 @@
-{% set version = '1.1-10' %}
+{% set version = "1.1-12" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/lmeSplines_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/lmeSplines/lmeSplines_{{ version }}.tar.gz
-  sha256: 2a7ae80f3742da6254dcd313a7ffd11bea4832d27b7f06f69f18e733af86c63b
+  sha256: 59c43f2348703d2fd694e65f680627cd61d249c7941de86fcb427b6f58491490
 
 build:
-  merge_build_host: True  # [win]
-  number: 1
+  merge_build_host: true  # [win]
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -38,11 +38,10 @@ test:
 about:
   home: https://CRAN.R-project.org/package=lmeSplines
   license: GPL-2.0-only
-  summary: Add smoothing spline modelling capability to nlme. Fit smoothing spline terms in Gaussian
-    linear and nonlinear mixed-effects models
+  summary: Add smoothing spline modelling capability to nlme. Fit smoothing spline terms in Gaussian linear and nonlinear mixed-effects models
   license_family: GPL2
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
 
 extra:
   recipe-maintainers:
