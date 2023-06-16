@@ -1,11 +1,11 @@
-About r-lmesplines
-==================
+About r-lmesplines-feedstock
+============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-lmesplines-feedstock/blob/main/LICENSE.txt)
 
 Home: https://CRAN.R-project.org/package=lmeSplines
 
 Package license: GPL-2.0-only
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-lmesplines-feedstock/blob/main/LICENSE.txt)
 
 Summary: Add smoothing spline modelling capability to nlme. Fit smoothing spline terms in Gaussian linear and nonlinear mixed-effects models
 
